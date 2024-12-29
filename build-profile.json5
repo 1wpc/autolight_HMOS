@@ -1,0 +1,54 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\wby\\.ohos\\config\\default_autolight_O52MXeA10cPXvi-CFJBWaoSeXv62sqoUJaYZ9LzUd3U=.cer",
+          "storePassword": "0000001B8F4C24D3A78C697CDFB7D16C1917B99CAC224A394F48BAAED6496DC0F884E7F2B9B0905E0A7179",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B7AE76DE7151B35D8DFE5761A09AF24D8E5343D2A5B75E55EF82BECA7944B43DF81B958CDB7D40D",
+          "profile": "C:\\Users\\wby\\.ohos\\config\\default_autolight_O52MXeA10cPXvi-CFJBWaoSeXv62sqoUJaYZ9LzUd3U=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\wby\\.ohos\\config\\default_autolight_O52MXeA10cPXvi-CFJBWaoSeXv62sqoUJaYZ9LzUd3U=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
