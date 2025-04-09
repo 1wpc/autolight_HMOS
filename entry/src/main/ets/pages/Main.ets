@@ -39,7 +39,6 @@ struct Main{
       connection.on('bluetoothDeviceFind', (data)=>{
         for(let i=0;i<data.length;i++){
           let adrr = data[i]
-          console.log("BLE scan result:"+adrr)
           if(adrr!=""){
             let name = connection.getRemoteDeviceName(adrr)
             if(name == "ESP32_Server"){
@@ -97,7 +96,7 @@ struct Main{
         .alignRules({
           top: { anchor: '__container__', align: VerticalAlign.Top }
         })
-        .onClick(()=>{9
+        .onClick(()=>{
           router.pushUrl({url: "pages/Test"})
         })
 
